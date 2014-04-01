@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>Parallax Great Quotes</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	<div class="section-1 cf">
+		<div class="greeting-content">
+			<h1>&ldquo;QUOTES-RALLAX&rdquo;</h1>
+			<h3>What are your favourite quotes???</h3>
+			<p>&copy;{UNS}_mikun. This demo is for <a href="http://thachpham.com"><img src="img/thachpham.png"></img></a></p>
+		</div>
+	</div>
+	<div class="section-2 cf">
+		<img id="sherlock-img" src="img/sherlock.png" alt="sherlock holmes"></img>
+		<div class="quotes sherlock">
+			<p>&ldquo;My name is Sherlock Holmes.  It is my business to know what other people don't know.&rdquo;</p>
+			<p>&ldquo;When you have eliminated all the impossible, whatever remains, however improbable, must be the truth.&rdquo;</p>
+			<p>&ldquo;The world is full of obvious things which nobody by any chance ever observes.&rdquo;</p>
+			<p>&ldquo;I never guess. It is a shocking habbit, destructive to the logical faculty.&rdquo;</p>
+		</div>	
+	</div>
+	<div class="section-3 cf">
+		<img id="steve-img" src="img/steve.png" alt="steve jobs"></img>
+		<div class="quotes steve">
+			<p>&ldquo;Sometimes life is going to hit you in the head with a brick. Don’t lose faith.&rdquo;</p>
+			<p>&ldquo;Things don't have to change the world to be important.&rdquo;</p>
+			<p>&ldquo;Deciding what not to do is as important as deciding what to do.&rdquo;</p>
+			<p>&ldquo;Design is not just what it looks like and feels like. Design is how it works.&rdquo;</p>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.function.js"></script>
+	<script>
+		$(document).ready(function() {
+			var pos_1 = $('.section-1').offset().top;
+			var pos_2 = $('.section-2').offset().top;
+			var pos_3 = $('.section-3').offset().top;
+			// Section 1
+			$('.section-1').parallax('backgroundPosition', pos_1, 0.5);
+			// Section 2
+			$('.section-2').parallax('backgroundPosition', pos_2, 0.5);
+			$('.sherlock').parallax('top', 500, 0.5);
+			$('#sherlock-img').parallax('top', 300, 0.4);
+			// Section 3
+			$('.section-3').parallax('backgroundPosition', pos_3, 0.5);
+			$('.steve').parallax('top', 1000, 0.9);
+			$('#steve-img').parallax('top', 700, 0.7);
+		});
+	</script>
+</body>
+</html>
