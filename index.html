@@ -12,7 +12,7 @@
 		<div class="greeting-content">
 			<h1>&ldquo;QUOTESALLAX&rdquo;</h1>
 			<h3>What are your favourite quotes???</h3>
-			<p>&copy; Designed by {UNS}_mikun &amp; Illustrated by <a href="https://www.facebook.com/Pcstar2205">Pcstar</a> <br>This demo is just for <a href="http://thachpham.com"><img src="img/thachpham.png"></img></a></p>
+			<p>&copy; Designed by <i>mikun</i> &amp; Photo edited by <i>Pcstar</i> <br>This demo is just for <a href="http://thachpham.com"><img src="img/thachpham.png"></img></a></p>
 		</div>
 	</div>
 	<div class="section-2 cf">
@@ -35,23 +35,7 @@
 	</div>
 
 	<script src="js/jquery.min.js"></script>
-	<script src="js/parallax.function.js"></script>
-	<script>
-		$(document).ready(function() {
-			var pos_1 = $('.section-1').offset().top;
-			var pos_2 = $('.section-2').offset().top;
-			var pos_3 = $('.section-3').offset().top;
-			// Section 1
-			$('.section-1').parallax('backgroundPosition', pos_1, 0.5);
-			// Section 2
-			$('.section-2').parallax('backgroundPosition', pos_2, 0.5);
-			$('.sherlock').parallax('top', 300, 0.2);
-			$('#sherlock-img').parallax('top', 800, 1);
-			// Section 3
-			$('.section-3').parallax('backgroundPosition', pos_3, 0.5);
-			$('.steve').parallax('top', 1000, 0.5);
-			$('#steve-img').parallax('top',1700, 1);
-		});
-	</script>
+	<script src="js/parallax.js"></script>
+	
 </body>
 </html>

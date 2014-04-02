@@ -10,10 +10,10 @@ function parallax() {
 	$('.section-1').css('backgroundPosition', "50% " + Math.round(($('.section-1').offset().top - scrollPos) * 0.5) + "px");
 	// Section 2
 	$('.section-2').css('backgroundPosition', "50% " + Math.round(($('.section-2').offset().top - scrollPos) * 0.3) + "px");
-	$('.sherlock').css('top',(500 - (scrollPos * 0.5)) + 'px')
-	$('#sherlock-img').css('top',(250 - (scrollPos * 0.3)) + 'px')
+	$('.sherlock').css('top',(300 - (scrollPos * 0.2)) + 'px')
+	$('#sherlock-img').css('top',(800 - (scrollPos * 1)) + 'px')
 	// Section 3
 	$('.section-3').css('backgroundPosition', "50% " + Math.round(($('.section-3').offset().top - scrollPos) * 0.4) + "px");
-	$('.steve').css('top',(600 - (scrollPos * 0.5)) + 'px')
-	$('#steve-img').css('top',(600 - (scrollPos * 0.7)) + 'px')
+	$('.steve').css('top',(1000 - (scrollPos * 0.5)) + 'px')
+	$('#steve-img').css('top',(1700 - (scrollPos * 1)) + 'px')
 }
